@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { ArrowDownRight, ArrowRight, Mail } from "lucide-react";
+import { ArrowDown, ArrowRight, Mail } from "lucide-react";
 import { LiveBuildAnimation } from "@/components/sections/LiveBuildAnimation";
 import { Magnetic } from "@/components/ui/Magnetic";
 import { site } from "@/lib/site";
@@ -64,19 +64,23 @@ export function Hero() {
             <Magnetic className="inline-flex">
               <a
                 href="#projects"
-                className="focus-ring inline-flex min-h-12 items-center justify-center gap-2 rounded-lg bg-accent px-6 text-sm font-bold text-black transition hover:bg-white"
+                className="hero-btn hero-btn-primary focus-ring group inline-flex min-h-12 items-center justify-center gap-2 rounded-lg px-6 text-sm font-bold text-black"
               >
                 View Work
-                <ArrowRight aria-hidden="true" size={18} />
+                <ArrowRight
+                  aria-hidden="true"
+                  className="hero-btn-icon"
+                  size={18}
+                />
               </a>
             </Magnetic>
             <Magnetic className="inline-flex">
               <a
                 href="#contact"
-                className="focus-ring inline-flex min-h-12 items-center justify-center gap-2 rounded-lg border border-white/14 bg-white/[0.06] px-6 text-sm font-bold text-white transition hover:border-accent/70 hover:text-accent"
+                className="hero-btn hero-btn-secondary focus-ring group inline-flex min-h-12 items-center justify-center gap-2 rounded-lg px-6 text-sm font-bold text-white"
               >
                 Get in touch
-                <Mail aria-hidden="true" size={18} />
+                <Mail aria-hidden="true" className="hero-btn-icon" size={18} />
               </a>
             </Magnetic>
           </div>
@@ -96,10 +100,12 @@ export function Hero() {
 
         <a
           href="#about"
-          className="focus-ring js-hero-fade absolute bottom-6 right-6 hidden size-12 place-items-center rounded-lg border border-white/12 bg-white/[0.04] text-white/70 transition hover:border-accent/60 hover:text-accent md:grid"
+          className="focus-ring js-hero-fade absolute bottom-3 left-0 hidden items-center gap-2 rounded-lg text-xs font-bold uppercase text-white/42 transition hover:text-accent md:inline-flex"
           aria-label="Scroll to about section"
         >
-          <ArrowDownRight aria-hidden="true" />
+          <span className="h-px w-10 bg-current" />
+          Scroll
+          <ArrowDown aria-hidden="true" size={15} className="animate-bounce" />
         </a>
       </div>
     </section>
