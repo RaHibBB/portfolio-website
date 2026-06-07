@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { ArrowDownRight, ArrowRight, Mail } from "lucide-react";
+import { LiveBuildAnimation } from "@/components/sections/LiveBuildAnimation";
 import { Magnetic } from "@/components/ui/Magnetic";
 import { site } from "@/lib/site";
 
@@ -26,7 +27,9 @@ export function Hero() {
         <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(5,6,7,0.2)_0%,rgba(5,6,7,0.86)_100%)]" />
       </div>
 
-      <div className="container-shell flex min-h-[calc(80svh-5rem)] flex-col justify-end md:min-h-[calc(80svh-6rem)]">
+      <LiveBuildAnimation />
+
+      <div className="container-shell relative z-10 flex min-h-[calc(80svh-5rem)] flex-col justify-end md:min-h-[calc(80svh-6rem)]">
         <div className="max-w-5xl">
           <p className="eyebrow js-hero-fade">{site.person.role}</p>
 
@@ -76,6 +79,18 @@ export function Hero() {
                 <Mail aria-hidden="true" size={18} />
               </a>
             </Magnetic>
+          </div>
+
+          <div className="js-hero-fade mt-3 md:hidden">
+            <div className="glass-line flex min-h-12 max-w-[21.5rem] items-center justify-between gap-3 rounded-lg px-4">
+              <span className="inline-flex items-center gap-2 text-xs font-bold uppercase text-accent">
+                <span className="size-2 animate-pulse rounded-full bg-accent shadow-[0_0_18px_rgba(33,246,212,0.85)]" />
+                Live build signal
+              </span>
+              <span className="font-mono text-xs text-white/54">
+                deploy:green
+              </span>
+            </div>
           </div>
         </div>
 
