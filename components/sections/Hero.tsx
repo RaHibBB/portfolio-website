@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { ArrowDown, ArrowRight, Mail } from "lucide-react";
+import { ArrowRight, Mail } from "lucide-react";
 import { LiveBuildAnimation } from "@/components/sections/LiveBuildAnimation";
 import { Magnetic } from "@/components/ui/Magnetic";
 import { site } from "@/lib/site";
@@ -97,17 +97,6 @@ export function Hero() {
             </div>
           </div>
         </div>
-
-        <a
-          href="#about"
-          className="focus-ring js-hero-fade absolute bottom-3 left-0 hidden items-center gap-2 rounded-lg text-white/42 transition hover:text-accent md:inline-flex"
-          aria-label="Scroll to about section"
-        >
-          <span className="h-px w-10 bg-current" />
-          <span className="grid size-9 place-items-center rounded-full border border-current/40 bg-white/[0.035]">
-            <ArrowDown aria-hidden="true" size={15} className="animate-bounce" />
-          </span>
-        </a>
       </div>
     </section>
   );
