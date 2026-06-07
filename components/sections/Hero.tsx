@@ -100,12 +100,13 @@ export function Hero() {
 
         <a
           href="#about"
-          className="focus-ring js-hero-fade absolute bottom-3 left-0 hidden items-center gap-2 rounded-lg text-xs font-bold uppercase text-white/42 transition hover:text-accent md:inline-flex"
+          className="focus-ring js-hero-fade absolute bottom-3 left-0 hidden items-center gap-2 rounded-lg text-white/42 transition hover:text-accent md:inline-flex"
           aria-label="Scroll to about section"
         >
           <span className="h-px w-10 bg-current" />
-          Scroll
-          <ArrowDown aria-hidden="true" size={15} className="animate-bounce" />
+          <span className="grid size-9 place-items-center rounded-full border border-current/40 bg-white/[0.035]">
+            <ArrowDown aria-hidden="true" size={15} className="animate-bounce" />
+          </span>
         </a>
       </div>
     </section>
