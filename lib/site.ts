@@ -147,7 +147,7 @@ export const site = {
     },
     {
       label: "X / Twitter",
-      href: "https://x.com/RaHibBB",
+      href: "https://x.com/RahibChowdhury1",
       icon: Twitter
     },
     {
@@ -164,4 +164,3 @@ export const site = {
 } as const;
 
 export type Project = (typeof site.projects)[number];
-
