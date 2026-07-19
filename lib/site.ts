@@ -3,10 +3,12 @@ import {
   BrainCircuit,
   Code2,
   Github,
+  LayoutTemplate,
   Linkedin,
   Rocket,
   Send,
   Sparkles,
+  Target,
   Twitter,
   Workflow,
   Zap
@@ -49,7 +51,7 @@ export const site = {
     "Vercel",
     "Supabase"
   ],
-  secondarySkills: ["WordPress", "Elementor", "Breakdance"],
+  secondarySkills: ["WordPress", "Elementor", "Divi", "Breakdance"],
   techMarquee: [
     "Claude Code",
     "OpenAI Codex",
@@ -62,25 +64,50 @@ export const site = {
     "Lenis",
     "Vercel",
     "Supabase",
-    "GitHub",
-    "Forms",
-    "Integrations"
+    "WordPress",
+    "Elementor",
+    "MCP",
+    "GitHub"
   ],
   projects: [
     {
-      title: "Golden Placement Services",
+      title: "Put-It-In-Storage",
       description:
-        "A production Next.js/Vercel site shaped through a v0 to Claude Code to GitHub to Vercel pipeline, with forms, integrations, and compliance-focused content.",
-      stack: ["Next.js", "Vercel", "v0", "Claude Code", "Forms"],
-      href: "https://goldenplacements.com",
+        "Live client site for a Washington self-storage facility: a v0 prototype hardened into production Next.js on Vercel, with a brand refresh and ongoing pricing and feature updates for a real local business.",
+      stack: ["Next.js", "v0", "Claude Code", "Vercel"],
+      href: "https://putitinstoragewa.com",
       linkLabel: "View site"
     },
     {
-      title: "1st Choice Advisory",
+      title: "Turf Pro Outdoor Service",
       description:
-        "An advisory services website shipped with an AI-assisted build process, refined into a performant production presence on a modern deployment workflow.",
-      stack: ["Next.js", "Vercel", "AI-assisted build", "SEO"],
-      href: "https://choiceadvisory.com/",
+        "Performance rescue for a lawn-care company's WordPress site: hosting-level cache audit, a full image recompression pipeline, and seconds of render-blocking CSS eliminated without breaking Elementor.",
+      stack: ["WordPress", "Elementor", "Core Web Vitals", "Performance"],
+      href: "https://turfproservice.com",
+      linkLabel: "View site"
+    },
+    {
+      title: "Great Deals Made Easy",
+      description:
+        "A UK consumer-savings publication shipped as a fast Next.js site — reviews, money-saving guides, and referral offers served from a clean, maintainable App Router codebase.",
+      stack: ["Next.js", "Vercel", "SEO", "Content site"],
+      href: "https://greatdealsmadeeasy.com",
+      linkLabel: "View site"
+    },
+    {
+      title: "Tortoise Construction",
+      description:
+        "Conversion-focused Google Ads landing pages for a licensed Oregon remodeler — distraction-free Elementor canvas layouts with clear CTAs, edited programmatically through a WordPress MCP workflow.",
+      stack: ["Google Ads", "Landing pages", "Elementor", "MCP automation"],
+      href: "https://tortoiseconstructionllc.com",
+      linkLabel: "View site"
+    },
+    {
+      title: "Golden Placement Services",
+      description:
+        "Senior-placement agency homepage redesigned through a v0 to Claude Code pipeline and delivered onto the client's production WordPress stack with compliance-focused content.",
+      stack: ["v0", "Claude Code", "WordPress", "Design-to-production"],
+      href: "https://goldenplacements.com",
       linkLabel: "View site"
     },
     {
@@ -129,9 +156,21 @@ export const site = {
     },
     {
       icon: Zap,
-      title: "Performance optimization",
+      title: "Performance & Core Web Vitals",
       description:
-        "Tune Core Web Vitals, reduce layout shift, optimize images, and keep animation-heavy experiences smooth and respectful of user settings."
+        "Speed rescues for Next.js and WordPress: caching audits, image pipelines, render-blocking CSS elimination, and scores that hold up on real hosting."
+    },
+    {
+      icon: LayoutTemplate,
+      title: "WordPress & page-builder builds",
+      description:
+        "Client-editable sites in Elementor, Divi 5, and Breakdance — built clean, pushed via the REST API, and structured so owners can update content without breaking the design."
+    },
+    {
+      icon: Target,
+      title: "Ads landing pages",
+      description:
+        "Distraction-free, conversion-first landing pages for Google Ads campaigns: fast loads, clear CTAs, tracking-ready, and matched to ad intent."
     }
   ],
   socials: [
