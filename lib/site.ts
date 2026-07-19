@@ -72,67 +72,101 @@ export const site = {
   projects: [
     {
       title: "Put-It-In-Storage",
+      category: "Client site",
       description:
         "Live client site for a Washington self-storage facility: a v0 prototype hardened into production Next.js on Vercel, with a brand refresh and ongoing pricing and feature updates for a real local business.",
       stack: ["Next.js", "v0", "Claude Code", "Vercel"],
       href: "https://putitinstoragewa.com",
-      linkLabel: "View site"
+      linkLabel: "View site",
+      image: "/images/projects/put-it-in-storage.png",
+      terminal: null
     },
     {
       title: "Turf Pro Outdoor Service",
+      category: "Performance",
       description:
         "Performance rescue for a lawn-care company's WordPress site: hosting-level cache audit, a full image recompression pipeline, and seconds of render-blocking CSS eliminated without breaking Elementor.",
       stack: ["WordPress", "Elementor", "Core Web Vitals", "Performance"],
       href: "https://turfproservice.com",
-      linkLabel: "View site"
+      linkLabel: "View site",
+      image: "/images/projects/turf-pro.png",
+      terminal: null
     },
     {
       title: "Great Deals Made Easy",
+      category: "Client site",
       description:
         "A UK consumer-savings publication shipped as a fast Next.js site — reviews, money-saving guides, and referral offers served from a clean, maintainable App Router codebase.",
       stack: ["Next.js", "Vercel", "SEO", "Content site"],
       href: "https://greatdealsmadeeasy.com",
-      linkLabel: "View site"
+      linkLabel: "View site",
+      image: "/images/projects/great-deals.png",
+      terminal: null
     },
     {
       title: "Tortoise Construction",
+      category: "Ads landing pages",
       description:
         "Conversion-focused Google Ads landing pages for a licensed Oregon remodeler — distraction-free Elementor canvas layouts with clear CTAs, edited programmatically through a WordPress MCP workflow.",
       stack: ["Google Ads", "Landing pages", "Elementor", "MCP automation"],
       href: "https://tortoiseconstructionllc.com",
-      linkLabel: "View site"
+      linkLabel: "View site",
+      image: "/images/projects/tortoise.png",
+      terminal: null
     },
     {
       title: "Golden Placement Services",
+      category: "Design-to-production",
       description:
         "Senior-placement agency homepage redesigned through a v0 to Claude Code pipeline and delivered onto the client's production WordPress stack with compliance-focused content.",
       stack: ["v0", "Claude Code", "WordPress", "Design-to-production"],
       href: "https://goldenplacements.com",
-      linkLabel: "View site"
+      linkLabel: "View site",
+      image: "/images/projects/golden-placement.png",
+      terminal: null
     },
     {
       title: "Custom Claude Skill",
+      category: "AI tooling",
       description:
         "A reusable Git workflow automation skill that generates branch names, commit messages, and PR drafts so agent-assisted shipping stays consistent.",
       stack: ["Claude Skills", "Git", "Automation", "DX"],
       href: "https://github.com/RaHibBB",
-      linkLabel: "See GitHub"
+      linkLabel: "See GitHub",
+      image: null,
+      terminal: [
+        "$ claude /git-workflow",
+        "✔ branch  feat/checkout-flow",
+        "✔ commit  feat: add checkout flow",
+        "✔ PR draft ready for review"
+      ]
     },
     {
       title: "FreeLLMAPI",
+      category: "Open source",
       description:
         "A self-hosted multi-model LLM proxy that unifies five AI providers behind one VS Code coding assistant interface for faster experimentation.",
       stack: ["LLM proxy", "API design", "VS Code", "Self-hosted"],
       href: "https://github.com/RaHibBB",
-      linkLabel: "See GitHub"
+      linkLabel: "See GitHub",
+      image: null,
+      terminal: [
+        "$ curl localhost:8787/v1/chat",
+        "→ routing   claude-opus-4-8",
+        "→ fallback  4 more providers",
+        "✔ 200 · one API, five models"
+      ]
     },
     {
       title: "AI Portfolio System",
+      category: "This site",
       description:
         "This portfolio experience: GSAP-heavy storytelling, custom metadata, structured data, a mailto contact flow, and production-ready App Router architecture.",
       stack: ["Next.js", "GSAP", "Lenis", "Tailwind", "SEO"],
       href: "#contact",
-      linkLabel: "Discuss a build"
+      linkLabel: "Discuss a build",
+      image: "/images/projects/portfolio.png",
+      terminal: null
     }
   ],
   services: [
